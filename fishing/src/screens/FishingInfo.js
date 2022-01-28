@@ -1,48 +1,68 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import background from "../images/TopImage.jpg";
 import Header from "../components/Header";
+import WeatherInfo from "../components/WeatherInfo";
+import TwitterInfo from "../components/TwitterInfo";
+import FishingShopInfo from "../components/FishingShopInfo";
 import Footer from "../components/Footer";
-import { useLocation } from "react-router-dom";
 import WeatherUrl from "../components/WeatherUrl";
-import Weather from "../components/Weather";
-// import FishingPlaceData from "../data/FishingPlaceData";
+import WaveUrl from "../components/WaveUrl";
 
 export const FishingInfo = () => {
   const location = useLocation();
-  const [resources, setResources] = useState({});
-
-  console.log("location.placeData:", location.state.name);
-  //   検索バーに入力された釣り場の気象データの取得
+  const [weatherData, setWeatherData] = useState({});
+  const [waveData, setWaveData] = useState();
+  let days = new Date();
+  let year = days.getFullYear();
+  let month = days.getMonth() + 1;
+  let day = days.getDate();
+  //   検索バーに入力された釣り場の１日分気象データの取得
   const one = "weather?lat=";
-  const getInPlace = async () => {
+  const getWeatherInPlace = async () => {
     try {
-      const searchInPlace = await WeatherUrl.get(
+      const searchWeatherInPlace = await WeatherUrl.get(
         one +
           location.state.lat +
           "&lon=" +
           location.state.lon +
           "&APPID=f4c0da68baed4e299440386df3914148"
       );
-      setResources(searchInPlace.data);
+      setWeatherData(searchWeatherInPlace.data);
     } catch (err) {
       console.log(err);
     }
   };
-  console.log("resources:", resources);
+  // 波の情報取得
+  const two =
+    "get_tide.php?pc=12&hc=1&yr=" +
+    year +
+    "&mn=" +
+    month +
+    "&dy=" +
+    day +
+    "&rg=day";
+  const getWaveInPlace = async () => {
+    try {
+      const searchWaveInPlace = await WaveUrl.get(two);
+      setWaveData(searchWaveInPlace.data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   useEffect(() => {
-    getInPlace();
+    getWeatherInPlace();
+    getWaveInPlace();
   }, []);
-
-  //
-  //   //   let sunSetTime=;
-  //   //   let sunRiseTime=;
 
   return (
     <React.Fragment>
       <div style={style.background}>
         <Header name={location.state.name} address={location.state.address} />
-        <Weather weatherData={resources} />
+        <WeatherInfo weatherData={weatherData} waveData={waveData} />
+        <TwitterInfo />
+        <FishingShopInfo />
         <Footer />
       </div>
     </React.Fragment>
