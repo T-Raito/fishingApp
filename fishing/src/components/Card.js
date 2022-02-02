@@ -12,16 +12,14 @@ const Card = ({ name, onClick }) => {
 
 const style = {
   card: {
-    width: window.innerWidth,
+    width: "50vw",
     height: "10vh",
     borderRadius: "5vh",
     fontSize: "2vh",
     fontFamily: "Comic Sans MS",
     backgroundColor: "rgba(220,220,220,0.5)",
     marginBottom: "1vh",
-    display: "grid",
-    gridTemplateColumns: "3fr 1fr 2fr 2fr",
-    alignItems: "center",
+    marginLeft: "25vw",
   },
 };
 

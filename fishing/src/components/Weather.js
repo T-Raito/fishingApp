@@ -1,28 +1,13 @@
 import React from "react";
-import { IconContext } from "react-icons";
-import { WiDaySunny } from "react-icons/wi";
-import { WiHail } from "react-icons/wi";
-import { WiCloudy } from "react-icons/wi";
 
 const Weather = ({ weatherData }) => {
-  //   let realTemp = Math.floor(weatherData.main.temp - 273.15);
+  let realTemp = 0;
+  weatherData.name
+    ? (realTemp = Math.floor(weatherData.main.temp - 273.15))
+    : (realTemp = "取得中");
   return (
     <React.Fragment>
       <div style={style.weather}>
-        <div>
-          <p>画像</p>
-          {/* <IconContext.Provider value={{ size: "10vw", color: "black" }}>
-              {weatherData.weather[0].main === "Clear" ? (
-                <WiDaySunny />
-              ) : weatherData.weather[0].main === "Rain" ? (
-                <WiHail />
-              ) : weatherData.weather[0].main === "Clouds" ? (
-                <WiCloudy />
-              ) : (
-                <p>{weatherData.weather[0].main}</p>
-              )}
-            </IconContext.Provider> */}
-        </div>
         <div style={style.weatherinfo}>
           <span>
             <p>温度</p>
@@ -30,9 +15,9 @@ const Weather = ({ weatherData }) => {
             <p>風速</p>
           </span>
           <span>
-            {/* <p>{realTemp}</p>
-              <p>{weatherData.main.humidity}</p>
-              <p>{weatherData.wind.speed}</p> */}
+            <p>{weatherData.name && realTemp}</p>
+            <p>{weatherData.name && weatherData.main.humidity}</p>
+            <p>{weatherData.name && weatherData.wind.speed}</p>
           </span>
           <span>
             <p>℃</p>
@@ -46,14 +31,11 @@ const Weather = ({ weatherData }) => {
 };
 
 const style = {
-  weather: {
-    display: "grid",
-    gridTemplateColumns: "2fr 3fr",
-  },
+  weather: {},
   weatherinfo: {
     display: "grid",
-    gridTemplateColumns: "4fr 4fr 1fr",
-    fontSize: "5px",
+    gridTemplateColumns: "2fr 1fr 1fr",
+    fontSize: "2vh",
     textAlign: "center",
   },
 };

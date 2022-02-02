@@ -23,12 +23,12 @@ const Search = ({ props }) => {
   const setPlaceData = fishingPlaceDatas.filter(
     (fishingPlaceData) => fishingPlaceData.name === searchingPlace
   );
-  console.log("setPlaceData:", setPlaceData);
+  // console.log("setPlaceData:", setPlaceData);
 
   const setPlaceName = () => {
     setSearchingPlace(place);
   };
-  console.log("searchingPlace:", searchingPlace);
+  // console.log("searchingPlace:", searchingPlace);
 
   // データの受け渡し
   // console.log("data:", data);
@@ -47,7 +47,7 @@ const Search = ({ props }) => {
           onChange={handlePlace}
           style={style.input}
         />
-        <IconContext.Provider value={{ size: "7vw", color: "white" }}>
+        <IconContext.Provider value={{ size: "7vw", color: "bLack" }}>
           <GiJellyfish onClick={setPlaceName} />
         </IconContext.Provider>
       </p>

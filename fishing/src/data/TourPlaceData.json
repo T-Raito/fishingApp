@@ -1,0 +1,634 @@
+[
+  {
+    "city": "浦安市",
+    "type": "温泉",
+    "name": "大江戸温泉物語 浦安万華郷",
+    "text": "全38の温泉がある温泉テーマパーク。水着で入れる温泉もあり、楽しめること間違いなし！",
+    "link": "https://urayasu.ooedoonsen.jp/",
+    "address": "千葉県浦安市日の出７丁目３−１２"
+  },
+  {
+    "city": "浦安市",
+    "type": "レジャー",
+    "name": "東京ディズニーランド",
+    "text": "日本を代表する大人から子供まで楽しむことができるテーマパーク。いざ、夢の国へ！！",
+    "link": "https://www.tokyodisneyresort.jp/tdl/",
+    "address": "千葉県浦安市舞浜１−１"
+  },
+  {
+    "city": "浦安市",
+    "type": "レジャー",
+    "name": "東京ディズニーシー",
+    "text": "日本を代表する大人から子供まで楽しむことができるテーマパーク。いざ、夢の国へ！！",
+    "link": "https://www.tokyodisneyresort.jp/tds/",
+    "address": "千葉県浦安市舞浜１−１３"
+  },
+  {
+    "city": "千葉市",
+    "type": "レジャー",
+    "name": "千葉市動物公園",
+    "text": "国内でも珍しいニシゴリラのモンタとローラが暮らす動物園。あのレッサーパンダの風太くんも在籍！",
+    "link": "https://www.city.chiba.jp/zoo/",
+    "address": "千葉県千葉市若葉区源町280番地"
+  },
+  {
+    "city": "千葉市",
+    "type": "温泉",
+    "name": "蘭々の湯",
+    "text": "稲毛区にあるスーパー銭湯。天然温泉で釣りの後にリフレッシュ！",
+    "link": "http://www.raranoyu.jp/",
+    "address": "千葉県千葉市稲毛区園生町４４５−２"
+  },
+  {
+    "city": "千葉市",
+    "type": "グルメ",
+    "name": "印度料理シタール",
+    "text": "1981年創業の本格派カレー。刺激を味わいたい方はぜひ！",
+    "link": "https://sitar.co.jp/",
+    "address": "千葉県千葉市花見川区検見川町１丁目１０６−１６"
+  },
+  {
+    "city": "市原市",
+    "type": "レジャー",
+    "name": "市原ぞうの国",
+    "text": "見どころはなんと言っても国内最多のゾウ。ソウゾウを超えた迫力をお試しあれ！",
+    "link": "https://zounokuni.com/",
+    "address": "千葉県市原市山小川９３７"
+  },
+  {
+    "city": "市原市",
+    "type": "温泉",
+    "name": "市原温泉　湯楽の里",
+    "text": "地域初の高濃度炭酸泉をはじめとした露天風呂などを楽しめる温泉施設。釣り後のリフレッシュにぜひ！",
+    "link": "https://www.yurakirari.com/yura/ichihara/",
+    "address": "千葉県市原市古市場３２９−１"
+  },
+  {
+    "city": "市原市",
+    "type": "温泉",
+    "name": "市原天然温泉　江戸遊",
+    "text": "源泉掛け流し露天風呂が人気の温泉施設。夜はなんと、、星空を眺めながら露天風呂でくつろげます！",
+    "link": "https://www.edoyu.com/ichihara/",
+    "address": "千葉県市原市松ケ島西１丁目３−４３"
+  },
+  {
+    "city": "袖ケ浦市",
+    "type": "レジャー",
+    "name": "東京ドイツ村",
+    "text": "花と緑のテーマパーク。なんと言ってもイルミネーションがすごい！",
+    "link": "https://t-doitsumura.co.jp/",
+    "address": "千葉県袖ケ浦市永吉４１９"
+  },
+  {
+    "city": "袖ケ浦市",
+    "type": "温泉",
+    "name": "天然温泉湯舞音",
+    "text": "千葉県内最大級の総合温泉リゾート。釣り後にリフレッシュ！",
+    "link": "https://yubune-sodegaura.jp/",
+    "address": "千葉県袖ケ浦市袖ケ浦駅前１丁目39−１５"
+  },
+  {
+    "city": "袖ケ浦市",
+    "type": "グルメ",
+    "name": "のうえんカフェ",
+    "text": "ロールキャベツグラタンが有名な行列ができるカフェ！",
+    "link": "https://nouen-cafe.jp/",
+    "address": "千葉県袖ケ浦市川原井１８３８"
+  },
+  {
+    "city": "木更津市",
+    "type": "レジャー",
+    "name": "三井アウトレットパーク　木更津",
+    "text": "木更津市にあるアウトレットモール。",
+    "link": "https://mitsui-shopping-park.com/mop/kisarazu/",
+    "address": "千葉県木更津市金田東３丁目１−１"
+  },
+  {
+    "city": "木更津市",
+    "type": "レジャー",
+    "name": "海ほたる",
+    "text": "東京湾アクアラインの中間にある施設。レストランや海を眺めることができます！",
+    "link": "https://www.umihotaru.com/",
+    "address": "千葉県木更津市中島 地先 海ほたる"
+  },
+  {
+    "city": "木更津市",
+    "type": "温泉",
+    "name": "湯の郷　かずさ",
+    "text": "木更津市にある温泉施設。釣りの後にゆっくりと疲れを取ろう！",
+    "link": "https://yunosato-kazusa.com/",
+    "address": "千葉県木更津市潮見５丁目７−１"
+  },
+  {
+    "city": "木更津市",
+    "type": "グルメ",
+    "name": "スーパー回転寿司 やまと 木更津店",
+    "text": "お寿司屋さん。釣りもして今日はおさかな三昧！",
+    "link": "https://yamato-f.jp/",
+    "address": "千葉県木更津市中央３丁目９−８"
+  },
+  {
+    "city": "富津市",
+    "type": "レジャー",
+    "name": "マザー牧場",
+    "text": "鹿野山に広がる観光牧場。いろんな動物たちと触れ合えるぞ！",
+    "link": "http://www.motherfarm.co.jp/",
+    "address": "千葉県富津市田倉９４０−３"
+  },
+  {
+    "city": "富津市",
+    "type": "グルメ",
+    "name": "さすけ食堂",
+    "text": "魚介海鮮料理が味わえるお店。名物は黄金アジ料理！ぜひアジを味わって！",
+    "link": "http://sasukeshokudou.com/",
+    "address": "千葉県富津市金谷２１９３−５"
+  },
+  {
+    "city": "富津市",
+    "type": "レジャー",
+    "name": "鋸山",
+    "text": "千葉県安房郡鋸南町と富津市との境に位置する標高329.4メートルの山。",
+    "link": "http://www.nihonji.jp/keidai/",
+    "address": "千葉県安房郡鋸南町元名 鋸山"
+  },
+  {
+    "city": "富津市",
+    "type": "温泉",
+    "name": "海辺の湯",
+    "text": "東京湾を眺められる温泉施設。隣にはお土産処もあり、地元の特産物も買えるので、釣れなかった場合は買って誤魔化そう！",
+    "link": "http://www.umibe-4126.com/",
+    "address": "千葉県富津市金谷５２５−１７ 天然温泉 海辺の湯"
+  },
+  {
+    "city": "安房郡",
+    "type": "レジャー",
+    "name": "道の駅　保田小学校",
+    "text": "廃校になった小学校を道の駅として再利用。地元の特産物などが購入できるぞ！",
+    "link": "https://hotasho.jp/",
+    "address": "千葉県安房郡鋸南町保田７２４"
+  },
+  {
+    "city": "安房郡",
+    "type": "グルメ",
+    "name": "ばんや",
+    "text": "南房総の海鮮料理が味わえるお店。直売所も併設されているのでお土産ならここで買おう！",
+    "link": "https://banya-grp.jp/",
+    "address": "千葉県安房郡鋸南町吉浜９９−５"
+  },
+  {
+    "city": "安房郡",
+    "type": "グルメ",
+    "name": "音楽と珈琲の店　岬",
+    "text": "明鐘岬の先端にあるカフェ。海を眺めながら至福のひと時を。。",
+    "link": "https://bosotown.com/archives/26070",
+    "address": "千葉県安房郡鋸南町元名１"
+  },
+  {
+    "city": "安房郡",
+    "type": "温泉",
+    "name": "ばんやの湯",
+    "text": "ばんやに併設された炭酸泉がある温泉施設。釣り後にリフレッシュ！",
+    "link": "https://banya-grp.jp/play/spa/",
+    "address": "千葉県安房郡鋸南町吉浜９９−５"
+  },
+  {
+    "city": "安房郡",
+    "type": "温泉",
+    "name": "笑楽の湯",
+    "text": "自然の声を聞きながら入浴ができる温泉施設。",
+    "link": "https://www.town.kyonan.chiba.jp/soshiki/24/",
+    "address": "千葉県安房郡鋸南町上佐久間６６"
+  },
+  {
+    "city": "南房総市",
+    "type": "レジャー",
+    "name": "亀岩の洞窟",
+    "text": "洞窟に入る朝日が川面を照らしハート型に見える幻想的なスポット。時期と時間には要注意！",
+    "link": "https://www.city.kimitsu.lg.jp/site/kanko/2259.html",
+    "address": "千葉県君津市笹 濃溝の滝"
+  },
+  {
+    "city": "南房総市",
+    "type": "グルメ",
+    "name": "高山製菓",
+    "text": "地元の素材で作ったお菓子をぜひ！",
+    "link": "https://www.takayamaseika.jp/",
+    "address": "千葉県南房総市高崎１３５５"
+  },
+  {
+    "city": "南房総市",
+    "type": "レジャー",
+    "name": "小松寺",
+    "text": "子宝・安産のご利益があり、紅葉の名所でもある。",
+    "link": "https://www.komatsuji.jp/",
+    "address": "千葉県南房総市千倉町大貫１０５７"
+  },
+  {
+    "city": "南房総市",
+    "type": "グルメ",
+    "name": "おさかな倶楽部",
+    "text": "岩井富浦漁協直営の海鮮料理店。価格もお手頃で、名物は「まんぷく定食」！",
+    "link": "https://www.tairyou.com/chokuso.htm",
+    "address": "千葉県南房総市富浦町多田良１２５４"
+  },
+  {
+    "city": "南房総市",
+    "type": "グルメ",
+    "name": "ストロベリーポット",
+    "text": "南房総でアワビ漁をする海女さんが経営するカフェ。",
+    "link": "http://www.strawberrypot.com/",
+    "address": "千葉県南房総市千倉町忽戸５４９−１"
+  },
+  {
+    "city": "館山市",
+    "type": "レジャー",
+    "name": "安房神社",
+    "text": "日本三大金運神社の一つとして有名な神社。",
+    "link": "http://www.awajinjya.org/",
+    "address": "千葉県館山市大神宮５８９"
+  },
+  {
+    "city": "館山市",
+    "type": "レジャー",
+    "name": "城山公園",
+    "text": "房総の戦国大名である里見氏の居城跡を整備した公園。日本庭園や博物館なども併設されている。",
+    "link": "https://www.tsukahara-li.co.jp/tateyama/",
+    "address": "千葉県館山市上真倉2237-1"
+  },
+  {
+    "city": "館山市",
+    "type": "温泉",
+    "name": "たてやま温泉郷",
+    "text": "鏡ヶ浦の海景色などの絶景を楽しめる湯宿。美しい景色に癒されてください。",
+    "link": "https://tateyamacity.com/onsen/",
+    "address": "千葉県館山市藤原１４９５−１"
+  },
+  {
+    "city": "館山市",
+    "type": "グルメ",
+    "name": "なぎさ食堂",
+    "text": "”渚の駅”たてやまに併設された食堂。お土産なども購入可能。",
+    "link": "https://www.nagisaplace-tateyama.com/",
+    "address": "千葉県館山市館山１５６４−１"
+  },
+  {
+    "city": "館山市",
+    "type": "グルメ",
+    "name": "館山炙り海鮮丼波奈 館山総本店",
+    "text": "館山ご当地グルメの館山炙り海鮮丼が食べれるお店。",
+    "link": "http://sohonten.washokuhana.com/",
+    "address": "千葉県館山市北条２６１９−６"
+  },
+  {
+    "city": "館山市",
+    "type": "レジャー",
+    "name": "船形山大福寺　崖観音",
+    "text": "崖観音で知られる真言宗智山派に属する寺院。観音堂からは鏡ヶ浦を一望できる。",
+    "link": "http://www.gakekannon.jp/",
+    "address": "千葉県館山市船形８３５"
+  },
+  {
+    "city": "鴨川市",
+    "type": "レジャー",
+    "name": "鴨川シーワールド",
+    "text": "日本を代表する水族館。シャチなどの動物たちのショーは感動すること間違いなし！",
+    "link": "https://www.kamogawa-seaworld.jp/",
+    "address": "千葉県鴨川市東町１４６４−１８"
+  },
+  {
+    "city": "鴨川市",
+    "type": "温泉",
+    "name": "鴨川館",
+    "text": "絶景のインフィニティ温泉がある温泉宿。景色を眺め、日頃の疲れを癒そう！",
+    "link": "https://www.kamogawakan.co.jp/",
+    "address": "千葉県鴨川市西町１１７９"
+  },
+  {
+    "city": "鴨川市",
+    "type": "温泉",
+    "name": "是空",
+    "text": "貸切露天風呂があり、オーシャンビューが楽しめる温泉宿。温泉入って、体リフレッシュ！",
+    "link": "https://zekuu.jp/",
+    "address": "千葉県鴨川市太海浜２４−１"
+  },
+  {
+    "city": "鴨川市",
+    "type": "グルメ",
+    "name": "地魚回転寿司丸藤本店",
+    "text": "南房総の新鮮な地魚の握りや刺身が味わえるお店。",
+    "link": "http://www.shiosaiichiba.co.jp/marufuji.html",
+    "address": "千葉県鴨川市広場 汐入７７７"
+  },
+  {
+    "city": "鴨川市",
+    "type": "グルメ",
+    "name": "海鮮炭火焼 我家我家",
+    "text": "房総の海の幸を海鮮バーベキューができるお店。",
+    "link": "http://www.shiosaiichiba.co.jp/gayagaya.html",
+    "address": "千葉県鴨川市広場７７７"
+  },
+  {
+    "city": "勝浦市",
+    "type": "レジャー",
+    "name": "勝浦海中展望塔",
+    "text": "水族館とは違い自然の海の中を見ることができる展望塔。季節ごとにさまざまな魚を見ることができる！",
+    "link": "http://www.katsuura.org/",
+    "address": "千葉県勝浦市吉尾１７４"
+  },
+  {
+    "city": "勝浦市",
+    "type": "グルメ",
+    "name": "市場食堂 勝喰",
+    "text": "勝浦港のすぐ近くにある市場食堂。美味しい地魚料理が味わえること間違いなし！",
+    "link": "http://www.kakkurau.com/",
+    "address": "千葉県勝浦市浜勝浦４０１ 市場前"
+  },
+  {
+    "city": "勝浦市",
+    "type": "グルメ",
+    "name": "ラーメン松野屋",
+    "text": "勝浦名物勝浦タンタン麺が食べれるお店。辛いもの好きにはたまらない！",
+    "link": "https://tabelog.com/chiba/A1207/A120701/12017404/",
+    "address": "千葉県勝浦市松野６５８−１"
+  },
+  {
+    "city": "勝浦市",
+    "type": "温泉",
+    "name": "温泉ドーム・アクアパレス(勝浦ホテル三日月)",
+    "text": "楽しく遊べる絶景スパ施設。子供から大人まで楽しむことができる！",
+    "link": "http://www.mikazuki.co.jp/katuura/spa/",
+    "address": "千葉県勝浦市墨名８２０"
+  },
+  {
+    "city": "いすみ市",
+    "type": "レジャー",
+    "name": "ポッポの丘",
+    "text": "電車好きにはたまらない鉄道車両保存施設。鉄道関連のグッズや地元の特産物などを購入することができる！",
+    "link": "https://www.popponooka.com/",
+    "address": "千葉県いすみ市作田１２９８"
+  },
+  {
+    "city": "いすみ市",
+    "type": "温泉",
+    "name": "九十九里ヴィラそとぼう",
+    "text": "太平洋を一望できる展望大浴場。入浴料500円と格安で入浴できる！",
+    "link": "https://www.villa-sotobou.com/",
+    "address": "千葉県いすみ市岬町和泉４４２７−１"
+  },
+  {
+    "city": "いすみ市",
+    "type": "グルメ",
+    "name": "女良食堂",
+    "text": "いすみ市名物伊八めしが食べれるお店。海鮮料理以外にもメニューが豊富！",
+    "link": "https://www.kanemosou.com/merashokudo/",
+    "address": "千葉県いすみ市日在１４３４"
+  },
+  {
+    "city": "夷隅郡",
+    "type": "温泉",
+    "name": "渓流の宿　福水",
+    "text": "渓流を望む露天風呂がある湯宿。自然を楽しみながらリフレッシュしよう！",
+    "link": "https://www.fukusui.com/",
+    "address": "千葉県夷隅郡大多喜町小田代６１８"
+  },
+  {
+    "city": "夷隅郡",
+    "type": "温泉",
+    "name": "秘湯の宿　滝見苑",
+    "text": "雄大な自然に囲まれた露天風呂がある湯宿。釣り後にリフレッシュしよう！",
+    "link": "http://www.takimi.co.jp/",
+    "address": "千葉県夷隅郡大多喜町粟又２−１１"
+  },
+  {
+    "city": "夷隅郡",
+    "type": "温泉",
+    "name": "滝見苑　けんこうむら　ごりやくの湯",
+    "text": "眺望抜群の天然温泉。露天風呂やレストランも併設されています。",
+    "link": "https://www.goriyakunoyu.jp/",
+    "address": "千葉県夷隅郡大多喜町粟又１７６ 滝見苑けんこう村 ごりやくの湯"
+  },
+  {
+    "city": "夷隅郡",
+    "type": "レジャー",
+    "name": "いすみ鉄道",
+    "text": "電車好きにはたまらない千葉県の房総半島を走るローカル線。電車内から眺める菜の花畑は絶景！",
+    "link": "https://isumirail.co.jp/",
+    "address": "千葉県夷隅郡大多喜町大多喜２６４"
+  },
+  {
+    "city": "夷隅郡",
+    "type": "レジャー",
+    "name": "養老渓谷",
+    "text": "関東では1番最後まで楽しめる紅葉スポット。",
+    "link": "http://www.youroukeikoku.com/",
+    "address": "千葉県夷隅郡大多喜町葛藤"
+  },
+  {
+    "city": "山武郡",
+    "type": "レジャー",
+    "name": "航空科学博物館",
+    "text": "飛行機好きにはたまらない航空に関する科学を学ぶことができる博物館。",
+    "link": "http://www.aeromuseum.or.jp/",
+    "address": "千葉県山武郡芝山町岩山１１１−３"
+  },
+  {
+    "city": "山武郡",
+    "type": "温泉",
+    "name": "成田空港温泉 空の湯",
+    "text": "飛行機が見える露天風呂がある24時間営業の混浴施設。",
+    "link": "https://soranoyu.com/",
+    "address": "千葉県山武郡芝山町香山新田２７−１"
+  },
+  {
+    "city": "大網白里市",
+    "type": "",
+    "name": "",
+    "text": "",
+    "link": "",
+    "address": ""
+  },
+  {
+    "city": "長生郡",
+    "type": "レジャー",
+    "name": "ターザニア",
+    "text": "フォレストアドベンチャー。木々を飛び回り、思いっきり遊ぼう！",
+    "link": "https://fa-tarzania.foret-aventure.jp/",
+    "address": "千葉県長生郡長柄町味庄１０６７"
+  },
+  {
+    "city": "長生郡",
+    "type": "温泉",
+    "name": "スパ&リゾート九十九里 太陽の里",
+    "text": "深夜も入れる温泉施設。宿泊もできるので、無理せず一休みしよう！",
+    "link": "https://www.taiyounosato.co.jp/",
+    "address": "千葉県長生郡長生村一松３４４５"
+  },
+  {
+    "city": "旭市",
+    "type": "レジャー",
+    "name": "九十九里オートキャンプ場 太陽と海",
+    "text": "お手軽にBBQができるキャンプ施設。",
+    "link": "http://tandu.jp/",
+    "address": "千葉県旭市東足洗２７４６−１０"
+  },
+  {
+    "city": "旭市",
+    "type": "レジャー",
+    "name": "道の駅 季楽里あさひ",
+    "text": "千葉県東総地域はつの道の駅。レストランやお土産屋もあるので、釣りの帰りにすこす寄り道してみては！",
+    "link": "https://kirari-asahi.com/",
+    "address": "千葉県旭市イ５２３８"
+  },
+  {
+    "city": "旭市",
+    "type": "グルメ",
+    "name": "とんかつ大成",
+    "text": "地産地消にこだわり、ブランド豚の椿ポークを使った料理が食べれる。",
+    "link": "https://www.ne.jp/asahi/taisei/net/",
+    "address": "千葉県旭市ニ１８３８−１"
+  },
+  {
+    "city": "旭市",
+    "type": "グルメ",
+    "name": "勘平衛",
+    "text": "地元で採れた海鮮料理が食べれる。",
+    "link": "https://tabelog.com/chiba/A1205/A120502/12014850/",
+    "address": "千葉県旭市三川４９５５−１２"
+  },
+  {
+    "city": "旭市",
+    "type": "グルメ",
+    "name": "milky way",
+    "text": "九十九里浜の絶景を眺めながらハワイアンパンケーキはいかがでしょうか。",
+    "link": "https://retty.me/area/PRE12/ARE47/SUB46903/100001209838/",
+    "address": "千葉県旭市横根１３５３-３６"
+  },
+  {
+    "city": "旭市",
+    "type": "温泉",
+    "name": "いいおか潮騒ホテル",
+    "text": "療養泉として評判が高い黒褐色の天然温泉。疲れを癒そう！",
+    "link": "https://www.iioka-s718.net/",
+    "address": "千葉県旭市萩園１４３７"
+  },
+  {
+    "city": "匝瑳市",
+    "type": "グルメ",
+    "name": "岩沢荘",
+    "text": "旬の食材にこだわった海鮮料理店。ボリュームもあり、お腹いっぱい食べれる！",
+    "link": "https://tabelog.com/chiba/A1205/A120502/12023705/",
+    "address": "千葉県匝瑳市野手１７１２５"
+  },
+  {
+    "city": "匝瑳市",
+    "type": "グルメ",
+    "name": "田町内山屋",
+    "text": "大正時代からある老舗食事処。日本そばを中心とした丼ものなどが食べれる！",
+    "link": "https://tabelog.com/chiba/A1205/A120502/12012505/",
+    "address": "千葉県匝瑳市八日市場イ２５２９"
+  },
+  {
+    "city": "匝瑳市",
+    "type": "レジャー",
+    "name": "天神山公園",
+    "text": "園内には７種約550本の桜が植えられており、花見の見どころとして有名。",
+    "link": "https://www.city.sosa.lg.jp/page/dir001623.html",
+    "address": "千葉県匝瑳市八日市場イ"
+  },
+  {
+    "city": "匝瑳市",
+    "type": "温泉",
+    "name": "天然温泉 旭の湯",
+    "text": "九十九里浜近くにある天然温泉施設。露天エリアには岩風呂などがある。",
+    "link": "http://azumakenkoucenter.web.fc2.com/ASAHI/ASAHITOP.html",
+    "address": "千葉県旭市東足洗 字浜方2778-47"
+  },
+  {
+    "city": "山武市",
+    "type": "レジャー",
+    "name": "蓮沼海浜公園",
+    "text": "子供から大人まで一緒にゴーカートなどの複数のアトラクションを楽しめます！",
+    "link": "http://kodomonohiroba.hasunuma.co.jp/",
+    "address": "千葉県山武市蓮沼ホ 蓮沼海浜公園"
+  },
+  {
+    "city": "山武市",
+    "type": "レジャー",
+    "name": "蓮沼ウォーターガーデン",
+    "text": "県内最大級のプール。スライダーや流れるプールなど17種のプールを楽しむことができる！",
+    "link": "http://watergarden.hasunuma.co.jp/",
+    "address": "千葉県山武市蓮沼ホ 蓮沼海浜公園"
+  },
+  {
+    "city": "山武市",
+    "type": "グルメ",
+    "name": "レストラン蓮味",
+    "text": "道の駅オライはすぬまに併設されている地場特産品を生かした定食を味わうことができる。",
+    "link": "http://www.oraihasunuma.com/html/restaurant.html",
+    "address": "千葉県山武市蓮沼ハ４８２６"
+  },
+  {
+    "city": "山武市",
+    "type": "温泉",
+    "name": "小谷流温泉　森の湯",
+    "text": "森の中にある天然温泉。森林浴を楽しみながら、くつろげること間違いなし！",
+    "link": "https://koyaru-morinoyu.jp/",
+    "address": "千葉県八街市小谷流６１６"
+  },
+  {
+    "city": "銚子市",
+    "type": "レジャー",
+    "name": "屏風ヶ浦",
+    "text": "銚子市〜飯岡町の刑部岬まで断崖絶壁の遊歩道が10kmに渡り続いている。海から約50mの高さかた絶景を一望できる。",
+    "link": "https://www.choshikanko.com/kankoDB/%E5%B1%8F%E9%A2%A8%E3%82%B1%E6%B5%A6/",
+    "address": "上永井 屏風ヶ浦"
+  },
+  {
+    "city": "銚子市",
+    "type": "レジャー",
+    "name": "銚子ポートタワー",
+    "text": "銚子のシンボルである灯台。銚子の大海原を一望できる。",
+    "link": "https://www.choshikanko.com/porttower/",
+    "address": "千葉県銚子市川口町２丁目６３８５−２６７"
+  },
+  {
+    "city": "銚子市",
+    "type": "レジャー",
+    "name": "犬吠埼灯台",
+    "text": "断崖絶壁に建てられたレンガ造りの灯台。270度のパノラマが広がり、絶景を楽しむことが出来る。",
+    "link": "https://www.choshikanko.com/kankoDB/%E7%8A%AC%E5%90%A0%E5%9F%BC%E7%81%AF%E5%8F%B0/",
+    "address": "千葉県銚子市犬吠埼９５７６"
+  },
+  {
+    "city": "銚子市",
+    "type": "グルメ",
+    "name": "鈴女",
+    "text": "新鮮な銚子の海の幸を堪能できる海鮮居酒屋。",
+    "link": "https://tabelog.com/chiba/A1205/A120501/12002127/",
+    "address": "千葉県銚子市中央町６−２９"
+  },
+  {
+    "city": "銚子市",
+    "type": "グルメ",
+    "name": "丼屋 七兵衛",
+    "text": "銚子港で水揚げされた青魚を使った青魚漬専門店。",
+    "link": "https://www.shichibee.com/",
+    "address": "千葉県銚子市飯沼町１丁目２６"
+  },
+  {
+    "city": "銚子市",
+    "type": "温泉",
+    "name": "ホテル 月美（太陽の里）",
+    "text": "太平洋を一望できる天然温泉が楽しめる。そのほかにも29種類の温泉を楽しむことが出来る。",
+    "link": "https://www.inubou.jp/",
+    "address": "千葉県銚子市犬吠埼１０２９２−１"
+  },
+  {
+    "city": "銚子市",
+    "type": "温泉",
+    "name": "犬吠埼ホテル",
+    "text": "展望露天風呂から太平洋を一望できる。夜は犬吠埼灯台の光がとても幻想的だ。",
+    "link": "http://www.inubohsaki-hotel.com/",
+    "address": "千葉県銚子市犬吠埼９５７４−１"
+  }
+]

@@ -6,19 +6,25 @@ const Wave = ({ waveData }) => {
   let month = days.getMonth() + 1;
   let day = days.getDate();
   let date = "";
-  if (day !== 10 || 11 || 12) {
-    date = year + "-0" + month + "-" + day;
+  if (month !== 10 || 11 || 12) {
+    if (day === 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9) {
+      date = year + "-0" + month + "-0" + day;
+    } else {
+      date = year + "-0" + month + "-" + day;
+    }
   } else {
-    date = year + "-" + month + "-" + day;
+    if (day === 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9) {
+      date = year + "-" + month + "-0" + day;
+    } else {
+      date = year + "-" + month + "-" + day;
+    }
   }
-  //   console.log(waveData.tide.chart[date]);
-  //   console.log(date);
+
+  console.log("waveData:", waveData);
+
   return (
     <React.Fragment>
       <div style={style.wave}>
-        <div>
-          <p>画像</p>
-        </div>
         <div style={style.waveinfo}>
           <span>
             <p>日出時刻</p>
@@ -28,17 +34,25 @@ const Wave = ({ waveData }) => {
             <p>満潮時刻</p>
           </span>
           <span>
-            {/* <p>{waveData.tide.chart[date].sun.rise}</p>
-            <p>{waveData.tide.chart[date].sun.set}</p>
-            <p>{waveData.tide.chart[date].moon.title}</p>
-            <p>
-              {waveData.tide.chart[date].edd[0].time},
-              {waveData.tide.chart[date].edd[1].time}
-            </p>
-            <p>
-              {waveData.tide.chart[date].flood[0].time},
-              {waveData.tide.chart[date].flood[1].time}
-            </p> */}
+            {waveData && (
+              <div>
+                <p>{waveData.tide.chart[date].sun.rise}</p>
+                <p>{waveData.tide.chart[date].sun.set}</p>
+                <p>{waveData.tide.chart[date].moon.title}</p>
+
+                <p>
+                  {waveData.tide.chart[date].edd.length === 2
+                    ? (waveData.tide.chart[date].edd[0].time,
+                      waveData.tide.chart[date].edd[1].time)
+                    : waveData.tide.chart[date].edd[0].time}
+                </p>
+
+                <p>
+                  {waveData.tide.chart[date].flood[0].time},
+                  {waveData.tide.chart[date].flood[1].time}
+                </p>
+              </div>
+            )}
           </span>
           <span>
             <p></p>
@@ -49,14 +63,11 @@ const Wave = ({ waveData }) => {
   );
 };
 const style = {
-  wave: {
-    display: "grid",
-    gridTemplateColumns: "2fr 3fr",
-  },
+  wave: {},
   waveinfo: {
     display: "grid",
-    gridTemplateColumns: "4fr 4fr 1fr",
-    fontSize: "5px",
+    gridTemplateColumns: "2fr 1fr 1fr",
+    fontSize: "2vh",
     textAlign: "center",
   },
 };
