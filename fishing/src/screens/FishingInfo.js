@@ -50,7 +50,9 @@ export const FishingInfo = () => {
   console.log("weatherData:", weatherData);
   // 波の情報取得
   const two =
-    "get_tide.php?pc=12&hc=1&yr=" +
+    "get_tide.php?pc=12&hc=" +
+    location.state.waveID +
+    "&yr=" +
     year +
     "&mn=" +
     month +
@@ -70,6 +72,7 @@ export const FishingInfo = () => {
     getWeatherInPlace();
     getWaveInPlace();
   }, []);
+  console.log(location.state.tourCity);
 
   return (
     <React.Fragment>
@@ -86,7 +89,11 @@ export const FishingInfo = () => {
                 : "気温にあった服装をしよう！")}
           </p>
         </div>
-        <WeatherInfo weatherData={weatherData} waveData={waveData} />
+        <WeatherInfo
+          weatherData={weatherData}
+          waveData={waveData}
+          waveID={location.state.waveID}
+        />
         <div style={style.info}>
           <p>最近釣れている魚を事前にチェックしよう！</p>
         </div>
@@ -96,7 +103,7 @@ export const FishingInfo = () => {
           <p>分からない場合は釣具屋さんへ聞いてみよう！</p>
         </div>
         <FishingShopInfo city={location.state.city} />
-        <Footer />
+        <Footer tourCity={location.state.tourCity} />
       </div>
     </React.Fragment>
   );

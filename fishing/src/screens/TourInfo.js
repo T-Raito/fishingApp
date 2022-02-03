@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import background from "../images/TopImage.jpg";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TourPlaceData from "../data/TourPlaceData";
+import { useLocation } from "react-router-dom";
 
 export const TourInfo = () => {
-  // const [tourData,setTourData]=useState([]);
+  const location = useLocation();
   // JSONファイルデータの取得
   const tourPlaceDatas = TourPlaceData;
-  // console.log("tourPlaceDatas:", tourPlaceDatas);
   const setTourData = tourPlaceDatas.filter(
-    (tourPlaceData) => tourPlaceData.city === "銚子市"
+    (tourPlaceData) => tourPlaceData.city === location.state
   );
   console.log("setTourData:", setTourData);
   return (

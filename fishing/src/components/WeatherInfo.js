@@ -6,13 +6,15 @@ import { WiDaySunny } from "react-icons/wi";
 import { WiHail } from "react-icons/wi";
 import { WiCloudy } from "react-icons/wi";
 
-const WeatherInfo = ({ weatherData, waveData }) => {
+const WeatherInfo = ({ weatherData, waveData, waveID }) => {
   let days = new Date();
   let year = days.getFullYear();
   let month = days.getMonth() + 1;
   let day = days.getDate();
   const three =
-    "https://api.tide736.net/tide_image.php?pc=12&hc=1&yr=" +
+    "https://api.tide736.net/tide_image.php?pc=12&hc=" +
+    waveID +
+    "&yr=" +
     year +
     "&mn=" +
     month +
@@ -42,6 +44,9 @@ const WeatherInfo = ({ weatherData, waveData }) => {
           <Wave waveData={waveData} />
         </div>
         <img src={three} style={style.image} />
+        <p style={style.subInfo}>
+          ※本情報は検索地点に一番近い情報を掲載しています。
+        </p>
       </div>
     </React.Fragment>
   );
@@ -70,6 +75,11 @@ const style = {
   },
   text: {
     textAlign: "center",
+  },
+  subInfo: {
+    fontSize: "1px",
+    textAlign: "center",
+    paddingBottom: "1vh",
   },
 };
 export default WeatherInfo;

@@ -4,7 +4,7 @@ import { GoHome } from "react-icons/go";
 import { IconContext } from "react-icons";
 import { useNavigate } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ tourCity }) => {
   let navigate = useNavigate();
   const onHome = () => {
     navigate("/");
@@ -13,7 +13,9 @@ const Footer = () => {
     navigate("/fishinginfo");
   };
   const onTour = () => {
-    navigate("/tourinfo");
+    navigate("/tourinfo", {
+      state: tourCity,
+    });
   };
   return (
     <div style={style.bottom}>
@@ -33,7 +35,6 @@ const Footer = () => {
         <IconContext.Provider value={{ size: "3vh", color: "black" }}>
           <GiWalk />
         </IconContext.Provider>
-
         <p style={style.font}>観光</p>
       </span>
     </div>
