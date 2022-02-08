@@ -21,9 +21,9 @@ const Search = ({ props }) => {
 
   // finshingplaceDataから一致するオブジェクトの抽出
   const setPlaceData = fishingPlaceDatas.filter(
-    (fishingPlaceData) => fishingPlaceData.name === searchingPlace
+    (fishingPlaceData) => fishingPlaceData.tourCity === searchingPlace
   );
-  // console.log("setPlaceData:", setPlaceData);
+  console.log("setPlaceData:", setPlaceData);
 
   const setPlaceName = () => {
     setSearchingPlace(place);
@@ -52,7 +52,13 @@ const Search = ({ props }) => {
         </IconContext.Provider>
       </p>
       {searchingPlace[0] ? (
-        <Card name={setPlaceData[0].name} onClick={onClick} />
+        <ul style={style.list}>
+          {setPlaceData.map((setPlaceData, index) => (
+            <li key={index}>
+              <Card name={setPlaceData.name} onClick={onClick} />
+            </li>
+          ))}
+        </ul>
       ) : (
         <p></p>
       )}
@@ -83,6 +89,13 @@ const style = {
     boxShadow: "1px 1px 2px 0 #707070 inset",
     borderRadius: "4px",
     marginRight: "4vw",
+  },
+  list: {
+    height: "43vh",
+    listStyle: "none",
+    paddingLeft: "0px",
+    overflowX: "hidden",
+    overflowY: "scroll",
   },
 };
 

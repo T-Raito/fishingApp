@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import background from "../images/TopImage.jpg";
 import Header from "../components/Header";
 import WeatherInfo from "../components/WeatherInfo";
 import TwitterInfo from "../components/TwitterInfo";
@@ -17,6 +16,7 @@ export const FishingInfo = () => {
   let year = days.getFullYear();
   let month = days.getMonth() + 1;
   let day = days.getDate();
+  console.log("day:", day);
   let date = "";
   if (month !== 10 || 11 || 12) {
     if (day === 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9) {
@@ -67,12 +67,14 @@ export const FishingInfo = () => {
       console.log(err);
     }
   };
+  console.log("waveData:", waveData);
+  console.log("date:", date);
 
   useEffect(() => {
     getWeatherInPlace();
     getWaveInPlace();
   }, []);
-  console.log(location.state.tourCity);
+  // console.log(location.state.tourCity);
 
   return (
     <React.Fragment>
@@ -111,13 +113,10 @@ export const FishingInfo = () => {
 const style = {
   background: {
     margin: "0",
-    backgroundImage: `url(${background})`,
-    backgroundSize: "cover",
-    width: window.innerWidth,
-    height: window.innerHeight,
     marginLeft: "0px",
     fontFamily: "Arial unicode ms",
     overflow: "scroll",
+    backgroundColor: "#eaf6fd",
   },
   box: {
     width: "90vw",
@@ -125,7 +124,6 @@ const style = {
     gridTemplateColumns: "1fr 1fr",
   },
   info: {
-    // width: "80vw",
     textAlign: "center",
     padding: "0.5em 1em",
     margin: "2em 0",
@@ -133,7 +131,7 @@ const style = {
     background: "#e4fcff" /*背景色*/,
     borderTop: "solid 6px #1dc1d6",
     boxShadow: "0 3px 4px rgba(0, 0, 0, 0.32)" /*影*/,
-    width: "90vw",
+    width: "80vw",
     marginLeft: "auto",
     marginRight: "auto",
     fontSize: "2vh",

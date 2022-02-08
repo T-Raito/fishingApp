@@ -20,18 +20,24 @@ const Wave = ({ waveData }) => {
     }
   }
 
-  console.log("waveData:", waveData);
+  const wave =
+    waveData &&
+    waveData.tide.chart[date].edd[0].time +
+      "," +
+      waveData.tide.chart[date].edd[1].time;
+
+  // console.log("waveData:", waveData);
 
   return (
     <React.Fragment>
       <div style={style.wave}>
         <div style={style.waveinfo}>
           <span>
-            <p>日出時刻</p>
-            <p>日入時刻</p>
+            <p>日出</p>
+            <p>日入</p>
             <p>潮名</p>
-            <p>干潮時刻</p>
-            <p>満潮時刻</p>
+            <p>干潮</p>
+            <p>満潮</p>
           </span>
           <span>
             {waveData && (
@@ -42,8 +48,7 @@ const Wave = ({ waveData }) => {
 
                 <p>
                   {waveData.tide.chart[date].edd.length === 2
-                    ? (waveData.tide.chart[date].edd[0].time,
-                      waveData.tide.chart[date].edd[1].time)
+                    ? wave
                     : waveData.tide.chart[date].edd[0].time}
                 </p>
 

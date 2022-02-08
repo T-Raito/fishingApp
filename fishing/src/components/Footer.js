@@ -2,37 +2,44 @@ import React from "react";
 import { GiFishing, GiWalk } from "react-icons/gi";
 import { GoHome } from "react-icons/go";
 import { IconContext } from "react-icons";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Footer = ({ tourCity }) => {
   let navigate = useNavigate();
+  const { pathname } = useLocation("");
   const onHome = () => {
     navigate("/");
   };
+  // ※質問箇所
   const onFishing = () => {
-    navigate("/fishinginfo");
+    if (pathname === "/tourinfo") {
+      navigate(-1);
+    }
   };
   const onTour = () => {
-    navigate("/tourinfo", {
-      state: tourCity,
-    });
+    if (pathname === "/fishinginfo") {
+      navigate("/tourinfo", {
+        state: tourCity,
+      });
+    }
   };
+
   return (
     <div style={style.bottom}>
       <span style={style.box} onClick={onHome}>
-        <IconContext.Provider value={{ size: "3vh", color: "black" }}>
+        <IconContext.Provider value={{ size: "8vw", color: "black" }}>
           <GoHome />
         </IconContext.Provider>
         <p style={style.font}>ホーム</p>
       </span>
       <span style={style.box} onClick={onFishing}>
-        <IconContext.Provider value={{ size: "3vh", color: "black" }}>
+        <IconContext.Provider value={{ size: "8vw", color: "black" }}>
           <GiFishing />
         </IconContext.Provider>
         <p style={style.font}>釣り</p>
       </span>
       <span style={style.box} onClick={onTour}>
-        <IconContext.Provider value={{ size: "3vh", color: "black" }}>
+        <IconContext.Provider value={{ size: "8vw", color: "black" }}>
           <GiWalk />
         </IconContext.Provider>
         <p style={style.font}>観光</p>
@@ -47,13 +54,13 @@ const style = {
     justifyContent: "space-around",
     alignItems: "center",
     paddingTop: "5px",
-    paddingBottom: "5px",
+    paddingBottom: "1vw",
+    textAlign: "center",
   },
   box: {
     width: "10vw",
   },
   font: {
-    textAlign: "center",
     fontSize: "10px",
   },
 };

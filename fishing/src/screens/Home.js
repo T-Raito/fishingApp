@@ -1,6 +1,5 @@
 import React from "react";
 import Search from "../components/Search";
-import background from "../images/HomeImage.jpg";
 import { TiWeatherPartlySunny, TiShoppingCart } from "react-icons/ti";
 import { MdTour } from "react-icons/md";
 import { GiSpearfishing } from "react-icons/gi";
@@ -15,6 +14,37 @@ export const Home = () => {
           <p>千葉県の行きたい釣り場を検索してみよう！</p>
         </div>
         <Search />
+        <div style={style.cityNames}>
+          <div style={style.areaBox}>
+            <p style={style.areaName}>内房 ( 東京湾側 )</p>
+            <ul style={style.list}>
+              <li>浦安市</li>
+              <li>千葉市</li>
+              <li>市原市</li>
+              <li>袖ケ浦市</li>
+              <li>木更津市</li>
+              <li>館山市</li>
+              <li>鴨川市</li>
+            </ul>
+          </div>
+          <div style={style.areaBox}>
+            <p style={style.areaName}>外房 ( 太平洋側 )</p>
+            <ul style={style.list}>
+              <li>富津市</li>
+              <li>安房郡</li>
+              <li>南房総市</li>
+              <li>勝浦市</li>
+              <li>いすみ市</li>
+              <li>夷隅郡</li>
+              <li>山武郡</li>
+              <li>長生郡</li>
+              <li>旭市</li>
+              <li>匝瑳市</li>
+              <li>山武市</li>
+              <li>銚子市</li>
+            </ul>
+          </div>
+        </div>
         <div style={style.explain}>
           <span style={style.explainTitle}>提供情報</span>
           <div style={style.box}>
@@ -48,23 +78,19 @@ export const Home = () => {
 };
 const style = {
   background: {
-    // backgroundImage: `url(${background})`,
-    // backgroundSize: "cover",
-    width: window.innerWidth,
-    height: window.innerHeight,
     backgroundColor: "#eaf6fd",
     margin: "0",
-    marginTop: "0",
   },
   top: {
-    fontSize: "10vw",
+    fontSize: "30px",
     fontFamily: "Arial unicode ms",
     textAlign: "center",
-    paddingTop: "10vh",
-    // backgroundColor: "tomato",
+    paddingTop: "7vh",
+    paddingLeft: "1vw",
+    marginBottom: "5vh",
   },
   info: {
-    fontSize: "2vh",
+    fontSize: "15px",
     textAlign: "center",
     padding: "0.5em 1em",
     margin: "2em 0",
@@ -72,7 +98,7 @@ const style = {
     background: "#e4fcff" /*背景色*/,
     borderTop: "solid 6px #1dc1d6",
     boxShadow: "0 3px 4px rgba(0, 0, 0, 0.32)" /*影*/,
-    width: "90vw",
+    width: "80vw",
     marginLeft: "auto",
     marginRight: "auto",
     fontFamily: "Arial unicode ms",
@@ -82,15 +108,15 @@ const style = {
     textAlign: "right",
     margin: "5px",
   },
-  icon: {},
   explain: {
     position: "relative",
     margin: "2em 0",
     padding: "0.5em 1em",
     border: "solid 3px #62c1ce",
-    width: "84vw",
+    width: "74vw",
     display: "flex",
     justifyContent: "space-around",
+    marginTop: "0",
     marginLeft: "auto",
     marginRight: "auto",
   },
@@ -125,8 +151,27 @@ const style = {
     marginBottom: "1vw",
   },
   text: {
-    fontSize: "1vh",
+    fontSize: "5px",
+    fontFamily: "Arial unicode ms",
+    textAlign: "center",
+  },
+  list: {
+    fontFamily: "Arial unicode ms",
+    listStyle: "none",
+    textAlign: "center",
+    paddingLeft: "0px",
+  },
+  areaName: {
     textAlign: "center",
     fontFamily: "Arial unicode ms",
+    color: "blue",
+  },
+  cityNames: {
+    marginBottom: "2vh",
+    display: "flex",
+    justifyContent: "center",
+  },
+  areaBox: {
+    width: "35vw",
   },
 };

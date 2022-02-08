@@ -1,5 +1,4 @@
 import React from "react";
-import background from "../images/TopImage.jpg";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TourPlaceData from "../data/TourPlaceData";
@@ -12,7 +11,7 @@ export const TourInfo = () => {
   const setTourData = tourPlaceDatas.filter(
     (tourPlaceData) => tourPlaceData.city === location.state
   );
-  console.log("setTourData:", setTourData);
+  // console.log("setTourData:", setTourData);
   return (
     <div style={style.background}>
       <Header name="観光情報" />
@@ -25,10 +24,16 @@ export const TourInfo = () => {
             {setTourData.map((setTourData, index) => (
               <li key={index}>
                 <div style={style.tourBack}>
-                  <p style={style.type}>{setTourData.type}</p>
-                  <a href={setTourData.link} target="_blank" style={style.name}>
-                    {setTourData.name}
-                  </a>
+                  <div style={style.border}>
+                    <p style={style.type}>{setTourData.type}</p>
+                    <a
+                      href={setTourData.link}
+                      target="_blank"
+                      style={style.name}
+                    >
+                      {setTourData.name}
+                    </a>
+                  </div>
                   <p style={style.address}>{setTourData.address}</p>
                   <p style={style.text}>{setTourData.text}</p>
                 </div>
@@ -45,12 +50,8 @@ export const TourInfo = () => {
 const style = {
   background: {
     margin: "0",
-    backgroundImage: `url(${background})`,
     backgroundSize: "cover",
-    width: window.innerWidth,
-    height: window.innerHeight,
-    // marginLeft: "0px",
-    // backgroundColor: "tomato",
+    backgroundColor: "#eaf6fd",
   },
   type: {
     padding: "0.5em 1em",
@@ -67,11 +68,14 @@ const style = {
     fontSize: "2vh",
   },
   address: {
-    fontSize: "2vh",
     paddingLeft: "2vw",
+    paddingRight: "2vw",
+    fontSize: "13px",
+    paddingLeft: "2vw",
+    // backgroundColor: "tomato",
   },
   tourBack: {
-    width: "97vw",
+    width: "80vw",
     backgroundColor: "rgba(255,255,255,0.5)",
     borderRadius: "2vw",
     paddingBottom: "5px",
@@ -81,9 +85,7 @@ const style = {
     marginRight: "auto",
   },
   info: {
-    width: "90vw",
-    marginLeft: "auto",
-    marginRight: "auto",
+    width: "80vw",
     fontSize: "2vh",
     textAlign: "center",
     padding: "0.5em 1em",
@@ -92,13 +94,20 @@ const style = {
     background: "#e4fcff" /*背景色*/,
     borderTop: "solid 6px #1dc1d6",
     boxShadow: "0 3px 4px rgba(0, 0, 0, 0.32)" /*影*/,
+    marginLeft: "auto",
+    marginRight: "auto",
   },
   text: {
     paddingLeft: "2vw",
-    fontSize: "2vh",
+    paddingRight: "2vw",
+    fontSize: "15px",
+    marginBottom: "0px",
   },
   list: {
     listStyle: "none",
     paddingLeft: "0px",
+  },
+  border: {
+    borderBottom: "solid 1px rgba(0, 0, 0, 0.32)",
   },
 };

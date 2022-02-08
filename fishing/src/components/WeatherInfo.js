@@ -20,26 +20,26 @@ const WeatherInfo = ({ weatherData, waveData, waveID }) => {
     month +
     "&dy=" +
     day +
-    "&rg=day&w=640&h=512&lc=blue&gcs=cyan&gcf=blue&ld=on&ttd=on&tsmd=on";
+    "&rg=day&w=640&h=512&lc=black&gcs=aqua&gcf=lightcyan&ld=on&ttd=off&tsmd=off";
   return (
     <React.Fragment>
       <div style={style.weatherBack}>
+        <div style={style.icon}>
+          {weatherData.name && (
+            <IconContext.Provider value={{ size: "15vh", color: "black" }}>
+              {weatherData.weather[0].main === "Clear" ? (
+                <WiDaySunny />
+              ) : weatherData.weather[0].main === "Rain" ? (
+                <WiHail />
+              ) : weatherData.weather[0].main === "Clouds" ? (
+                <WiCloudy />
+              ) : (
+                <p>{weatherData.weather[0].main}</p>
+              )}
+            </IconContext.Provider>
+          )}
+        </div>
         <div style={style.weatherinfo}>
-          <div style={style.icon}>
-            {weatherData.name && (
-              <IconContext.Provider value={{ size: "15vh", color: "black" }}>
-                {weatherData.weather[0].main === "Clear" ? (
-                  <WiDaySunny />
-                ) : weatherData.weather[0].main === "Rain" ? (
-                  <WiHail />
-                ) : weatherData.weather[0].main === "Clouds" ? (
-                  <WiCloudy />
-                ) : (
-                  <p>{weatherData.weather[0].main}</p>
-                )}
-              </IconContext.Provider>
-            )}
-          </div>
           <Weather weatherData={weatherData} />
           <Wave waveData={waveData} />
         </div>
@@ -61,8 +61,7 @@ const style = {
   },
   weatherinfo: {
     display: "grid",
-    gridTemplateColumns: "1fr 1fr 2fr",
-    marginLeft: "5vw",
+    gridTemplateColumns: "1fr 1fr ",
     textAlign: "center",
   },
   image: {

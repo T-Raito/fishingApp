@@ -6,9 +6,12 @@ const FishingShopInfo = ({ city }) => {
   return (
     <React.Fragment>
       <div style={style.fishingShopInfo}>
-        <a href={googleMapLink} target="_blank">
-          釣り具屋を探す
-        </a>
+        <p>
+          <a href={googleMapLink} target="_blank">
+            GoogleMap
+          </a>
+          で釣具屋を探す
+        </p>
       </div>
     </React.Fragment>
   );
@@ -16,8 +19,16 @@ const FishingShopInfo = ({ city }) => {
 
 const style = {
   fishingShopInfo: {
+    width: "80vw",
     backgroundColor: "rgba(255,255,255,0.5)",
     borderRadius: "2vw",
+    textAlign: "center",
+    paddingTop: "5px",
+    paddingBottom: "5px",
+    marginLeft: "auto",
+    marginRight: "auto",
+    marginBottom: "5vh",
+    fontSize: "2vh",
   },
 };
 

@@ -11,10 +11,14 @@ const Header = ({ name, address }) => {
         </IconContext.Provider>
       </span>
       <span style={style.title}>
-        <p>{name}</p>
-        <a href={googleMapLink} target="_blank" style={style.address}>
-          {address}
-        </a>
+        <ul style={style.list}>
+          <li>{name}</li>
+          <li>
+            <a href={googleMapLink} target="_blank" style={style.address}>
+              {address}
+            </a>
+          </li>
+        </ul>
       </span>
       <span style={style.box}>
         <IconContext.Provider value={{ size: "10vw", color: "black" }}>
@@ -26,21 +30,27 @@ const Header = ({ name, address }) => {
 };
 const style = {
   header: {
-    backgroundColor: "#CCCACA",
+    // backgroundColor: "#CCCACA",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     fontFamily: "Arial unicode ms",
   },
   title: {
-    width: "50vw",
+    width: "65vw",
     textAlign: "center",
+    fontSize: "3vh",
   },
   address: {
-    fontSize: "10px",
+    fontSize: "2vh",
+    margin: "0",
   },
   box: {
     width: "10vw",
+  },
+  list: {
+    listStyle: "none",
+    paddingLeft: "0px",
   },
 };
 export default Header;
