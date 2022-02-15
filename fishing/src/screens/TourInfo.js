@@ -71,7 +71,6 @@ const style = {
     paddingLeft: "2vw",
     paddingRight: "2vw",
     fontSize: "13px",
-    paddingLeft: "2vw",
     // backgroundColor: "tomato",
   },
   tourBack: {

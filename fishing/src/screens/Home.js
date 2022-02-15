@@ -79,7 +79,8 @@ export const Home = () => {
 const style = {
   background: {
     backgroundColor: "#eaf6fd",
-    margin: "0",
+    marginTop: "-30px",
+    paddingBottom: "100px",
   },
   top: {
     fontSize: "30px",

@@ -27,21 +27,33 @@ const Footer = ({ tourCity }) => {
   return (
     <div style={style.bottom}>
       <span style={style.box} onClick={onHome}>
-        <IconContext.Provider value={{ size: "8vw", color: "black" }}>
+        <IconContext.Provider value={{ size: "8vw", color: "grey" }}>
           <GoHome />
         </IconContext.Provider>
         <p style={style.font}>ホーム</p>
       </span>
       <span style={style.box} onClick={onFishing}>
-        <IconContext.Provider value={{ size: "8vw", color: "black" }}>
-          <GiFishing />
-        </IconContext.Provider>
+        {pathname === "/fishinginfo" ? (
+          <IconContext.Provider value={{ size: "8vw", color: "black" }}>
+            <GiFishing />
+          </IconContext.Provider>
+        ) : (
+          <IconContext.Provider value={{ size: "8vw", color: "grey" }}>
+            <GiFishing />
+          </IconContext.Provider>
+        )}
         <p style={style.font}>釣り</p>
       </span>
       <span style={style.box} onClick={onTour}>
-        <IconContext.Provider value={{ size: "8vw", color: "black" }}>
-          <GiWalk />
-        </IconContext.Provider>
+        {pathname === "/tourinfo" ? (
+          <IconContext.Provider value={{ size: "8vw", color: "black" }}>
+            <GiWalk />
+          </IconContext.Provider>
+        ) : (
+          <IconContext.Provider value={{ size: "8vw", color: "grey" }}>
+            <GiWalk />
+          </IconContext.Provider>
+        )}
         <p style={style.font}>観光</p>
       </span>
     </div>

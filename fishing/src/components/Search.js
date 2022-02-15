@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { IconContext } from "react-icons";
-
 import Card from "../components/Card";
 import { GiJellyfish } from "react-icons/gi";
 import FishingPlaceData from "../data/FishingPlaceData";
