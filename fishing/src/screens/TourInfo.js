@@ -11,7 +11,6 @@ export const TourInfo = () => {
   const setTourData = tourPlaceDatas.filter(
     (tourPlaceData) => tourPlaceData.city === location.state
   );
-  // console.log("setTourData:", setTourData);
   return (
     <div style={style.background}>
       <Header name="観光情報" />
@@ -42,7 +41,6 @@ export const TourInfo = () => {
           </ul>
         </div>
       )}
-
       <Footer />
     </div>
   );

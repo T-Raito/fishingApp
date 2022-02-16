@@ -5,38 +5,29 @@ import { GiJellyfish } from "react-icons/gi";
 import FishingPlaceData from "../data/FishingPlaceData";
 import { useNavigate } from "react-router-dom";
 
-const Search = ({ props }) => {
+const Search = () => {
   const [place, setPlace] = useState("");
   const [searchingPlace, setSearchingPlace] = useState("");
-
   const navigate = useNavigate();
   // JSONファイルデータの取得
   const fishingPlaceDatas = FishingPlaceData;
-
   // 検索バーの入力データの保存
   const handlePlace = (event) => {
     setPlace(event.target.value);
   };
-
   // finshingplaceDataから一致するオブジェクトの抽出
   const setPlaceData = fishingPlaceDatas.filter(
     (fishingPlaceData) => fishingPlaceData.tourCity === searchingPlace
   );
-  console.log("setPlaceData:", setPlaceData);
-
   const setPlaceName = () => {
     setSearchingPlace(place);
   };
-  // console.log("searchingPlace:", searchingPlace);
-
   // データの受け渡し
-  // console.log("data:", data);
   const onClick = () => {
     navigate("/fishinginfo", {
       state: setPlaceData[0],
     });
   };
-
   return (
     <div style={style.total}>
       <p style={style.search}>

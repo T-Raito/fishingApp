@@ -16,21 +16,8 @@ export const FishingInfo = () => {
   let year = days.getFullYear();
   let month = days.getMonth() + 1;
   let day = days.getDate();
-  console.log("day:", day);
-  let date = "";
-  if (month !== 10 || 11 || 12) {
-    if (day === 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9) {
-      date = year + "-0" + month + "-0" + day;
-    } else {
-      date = year + "-0" + month + "-" + day;
-    }
-  } else {
-    if (day === 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9) {
-      date = year + "-" + month + "-0" + day;
-    } else {
-      date = year + "-" + month + "-" + day;
-    }
-  }
+  let date =
+    year + "-" + ("00" + month).slice(-2) + "-" + ("00" + day).slice(-2);
   //   検索バーに入力された釣り場の１日分気象データの取得
   const one = "weather?lat=";
   const getWeatherInPlace = async () => {
@@ -47,7 +34,6 @@ export const FishingInfo = () => {
       console.log(err);
     }
   };
-  console.log("weatherData:", weatherData);
   // 波の情報取得
   const two =
     "get_tide.php?pc=12&hc=" +
@@ -67,15 +53,10 @@ export const FishingInfo = () => {
       console.log(err);
     }
   };
-  console.log("waveData:", waveData);
-  console.log("date:", date);
-
   useEffect(() => {
     getWeatherInPlace();
     getWaveInPlace();
   }, []);
-  // console.log(location.state.tourCity);
-
   return (
     <React.Fragment>
       <div style={style.background}>
@@ -113,9 +94,7 @@ export const FishingInfo = () => {
 const style = {
   background: {
     margin: "0",
-    marginLeft: "0px",
     fontFamily: "Arial unicode ms",
-    overflow: "scroll",
     backgroundColor: "#eaf6fd",
   },
   box: {

@@ -21,7 +21,7 @@ export const Home = () => {
               <li>浦安市</li>
               <li>千葉市</li>
               <li>市原市</li>
-              <li>袖ケ浦市</li>
+              <li>袖ヶ浦市</li>
               <li>木更津市</li>
               <li>館山市</li>
               <li>鴨川市</li>
@@ -49,25 +49,33 @@ export const Home = () => {
           <span style={style.explainTitle}>提供情報</span>
           <div style={style.box}>
             <div style={style.circle}>
-              <TiWeatherPartlySunny />
+              <div style={style.icon}>
+                <TiWeatherPartlySunny />
+              </div>
             </div>
             <p style={style.text}>天気や波の情報</p>
           </div>
           <div style={style.box}>
             <div style={style.circle}>
-              <GiSpearfishing />
+              <div style={style.icon}>
+                <GiSpearfishing />
+              </div>
             </div>
             <p style={style.text}>釣果情報</p>
           </div>
           <div style={style.box}>
             <div style={style.circle}>
-              <TiShoppingCart />
+              <div style={style.icon}>
+                <TiShoppingCart />
+              </div>
             </div>
             <p style={style.text}>釣具屋情報</p>
           </div>
           <div style={style.box}>
             <div style={style.circle}>
-              <MdTour />
+              <div style={style.icon}>
+                <MdTour />
+              </div>
             </div>
             <p style={style.text}>観光情報</p>
           </div>
@@ -78,8 +86,8 @@ export const Home = () => {
 };
 const style = {
   background: {
+    margin: "0",
     backgroundColor: "#eaf6fd",
-    marginTop: "-30px",
     paddingBottom: "100px",
   },
   top: {
@@ -88,7 +96,7 @@ const style = {
     textAlign: "center",
     paddingTop: "7vh",
     paddingLeft: "1vw",
-    marginBottom: "5vh",
+    marginBottom: "7vh",
   },
   info: {
     fontSize: "15px",
@@ -96,9 +104,9 @@ const style = {
     padding: "0.5em 1em",
     margin: "2em 0",
     color: "black",
-    background: "#e4fcff" /*背景色*/,
+    background: "#e4fcff",
     borderTop: "solid 6px #1dc1d6",
-    boxShadow: "0 3px 4px rgba(0, 0, 0, 0.32)" /*影*/,
+    boxShadow: "0 3px 4px rgba(0, 0, 0, 0.32)",
     width: "80vw",
     marginLeft: "auto",
     marginRight: "auto",
@@ -135,21 +143,28 @@ const style = {
     fontWeight: "bold",
     borderRadius: "5px 5px 0 0",
   },
-  circle: {
-    height: "8vh",
-    width: "8vh",
-    borderRadius: "50%",
-    backgroundColor: "#62c1ce",
-    fontSize: "6vh",
-    textAlign: "center",
-    color: "white",
-    boxShadow: "0 3px 4px rgba(0, 0, 0, 0.32)",
-  },
   box: {
     marginLeft: "1vw",
     marginRight: "1vw",
     marginTop: "1vw",
     marginBottom: "1vw",
+  },
+  circle: {
+    height: "8vh",
+    width: "8vh",
+    borderRadius: "50%",
+    backgroundColor: "#62c1ce",
+    boxShadow: "0 3px 4px rgba(0, 0, 0, 0.32)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  icon: {
+    color: "white",
+    fontSize: "6vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
   text: {
     fontSize: "5px",
