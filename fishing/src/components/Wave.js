@@ -7,11 +7,19 @@ const Wave = ({ waveData }) => {
   let day = days.getDate();
   let date =
     year + "-" + ("00" + month).slice(-2) + "-" + ("00" + day).slice(-2);
-  const wave =
+
+  const waveEddTime =
     waveData &&
     waveData.tide.chart[date].edd[0].time +
       "," +
       waveData.tide.chart[date].edd[1].time;
+
+  const waveFloodTime =
+    waveData &&
+    waveData.tide.chart[date].flood[0].time +
+      "," +
+      waveData.tide.chart[date].flood[1].time;
+
   return (
     <React.Fragment>
       <div style={style.wave}>
@@ -25,17 +33,20 @@ const Wave = ({ waveData }) => {
           </ul>
           {waveData && (
             <ul style={style.list}>
-              <li style={style.item}>{waveData.tide.chart[date].sun.rise}</li>
-              <li style={style.item}>{waveData.tide.chart[date].sun.set}</li>
-              <li style={style.item}>{waveData.tide.chart[date].moon.title}</li>
-              <li style={style.item}>
+              <li style={style.value}>{waveData.tide.chart[date].sun.rise}</li>
+              <li style={style.value}>{waveData.tide.chart[date].sun.set}</li>
+              <li style={style.value}>
+                {waveData.tide.chart[date].moon.title}
+              </li>
+              <li style={style.value}>
                 {waveData.tide.chart[date].edd.length === 2
-                  ? wave
+                  ? waveEddTime
                   : waveData.tide.chart[date].edd[0].time}
               </li>
-              <li style={style.item}>
-                {waveData.tide.chart[date].flood[0].time},
-                {waveData.tide.chart[date].flood[1].time}
+              <li style={style.value}>
+                {waveData.tide.chart[date].flood.length === 2
+                  ? waveFloodTime
+                  : waveData.tide.chart[date].flood[0].time}
               </li>
             </ul>
           )}
@@ -59,6 +70,11 @@ const style = {
     paddingLeft: "0px",
   },
   item: {
+    marginBottom: "2vh",
+    textAlign: "center",
+    textDecoration: "underline",
+  },
+  value: {
     marginBottom: "2vh",
     textAlign: "center",
   },

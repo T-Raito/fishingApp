@@ -16,22 +16,22 @@ const Weather = ({ weatherData }) => {
             <li style={style.item}>気圧</li>
           </ul>
           <ul style={style.list}>
-            <li style={style.item}>{weatherData.name && realTemp}</li>
-            <li style={style.item}>
+            <li style={style.value}>{weatherData.name && realTemp}</li>
+            <li style={style.value}>
               {weatherData.name && weatherData.main.humidity}
             </li>
-            <li style={style.item}>
+            <li style={style.value}>
               {weatherData.name && weatherData.wind.speed}
             </li>
-            <li style={style.item}>
+            <li style={style.value}>
               {weatherData.name && weatherData.main.pressure}
             </li>
           </ul>
           <ul style={style.list}>
-            <li style={style.item}>℃</li>
-            <li style={style.item}>%</li>
-            <li style={style.item}>m/s</li>
-            <li style={style.item}>hPa</li>
+            <li style={style.value}>℃</li>
+            <li style={style.value}>%</li>
+            <li style={style.value}>m/s</li>
+            <li style={style.value}>hPa</li>
           </ul>
         </div>
       </div>
@@ -50,6 +50,11 @@ const style = {
     paddingLeft: "0px",
   },
   item: {
+    marginBottom: "2vh",
+    textAlign: "center",
+    textDecoration: "underline",
+  },
+  value: {
     marginBottom: "2vh",
     textAlign: "center",
   },

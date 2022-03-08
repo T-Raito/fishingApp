@@ -76,7 +76,7 @@ const style = {
     textAlign: "center",
   },
   subInfo: {
-    fontSize: "1px",
+    fontSize: "15px",
     textAlign: "center",
     paddingBottom: "1vh",
   },
